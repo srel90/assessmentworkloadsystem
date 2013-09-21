@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 18, 2013 at 03:57 PM
+-- Generation Time: Sep 21, 2013 at 07:29 AM
 -- Server version: 5.6.11
 -- PHP Version: 5.5.3
 
@@ -28,7 +28,6 @@ USE `assessmentworkloadsystem`;
 -- Table structure for table `faculty`
 --
 
-DROP TABLE IF EXISTS `faculty`;
 CREATE TABLE IF NOT EXISTS `faculty` (
   `facultyID` int(11) NOT NULL AUTO_INCREMENT COMMENT 'รหัสคณะ/สถาบัน',
   `faculty` varchar(255) COLLATE utf8_unicode_ci NOT NULL COMMENT 'คณะ/สถาบัน',
@@ -42,7 +41,7 @@ CREATE TABLE IF NOT EXISTS `faculty` (
 
 INSERT INTO `faculty` (`facultyID`, `faculty`, `status`) VALUES
 (1, 'วิทยาการจัดการ', 1),
-(2, '', 0),
+(2, '1121212', 0),
 (3, '', 0);
 
 -- --------------------------------------------------------
@@ -51,7 +50,6 @@ INSERT INTO `faculty` (`facultyID`, `faculty`, `status`) VALUES
 -- Table structure for table `otherworkgroup`
 --
 
-DROP TABLE IF EXISTS `otherworkgroup`;
 CREATE TABLE IF NOT EXISTS `otherworkgroup` (
   `otherWorkgroupID` int(11) NOT NULL AUTO_INCREMENT COMMENT 'รหัสกลุ่มงานอื่นๆ',
   `otherWorkgroupType` varchar(255) COLLATE utf8_unicode_ci NOT NULL COMMENT 'ประเภทงาน',
@@ -87,7 +85,6 @@ INSERT INTO `otherworkgroup` (`otherWorkgroupID`, `otherWorkgroupType`, `otherWo
 -- Table structure for table `researchingworkgroup`
 --
 
-DROP TABLE IF EXISTS `researchingworkgroup`;
 CREATE TABLE IF NOT EXISTS `researchingworkgroup` (
   `researchingWorkgroupID` int(11) NOT NULL AUTO_INCREMENT COMMENT 'รหัสกลุ่มงานวิจัย',
   `researchingWorkgroupType` int(11) NOT NULL COMMENT 'ประเภทงาน',
@@ -116,7 +113,6 @@ INSERT INTO `researchingworkgroup` (`researchingWorkgroupID`, `researchingWorkgr
 -- Table structure for table `servicesworkgroup`
 --
 
-DROP TABLE IF EXISTS `servicesworkgroup`;
 CREATE TABLE IF NOT EXISTS `servicesworkgroup` (
   `servicesWorkgroupID` int(11) NOT NULL AUTO_INCREMENT COMMENT 'รหัสกลุ่มงานบริการวิชาการ',
   `servicesWorkgroupType` varchar(255) COLLATE utf8_unicode_ci NOT NULL COMMENT 'ประเภทงาน',
@@ -144,7 +140,6 @@ INSERT INTO `servicesworkgroup` (`servicesWorkgroupID`, `servicesWorkgroupType`,
 -- Table structure for table `teachingworkgroup`
 --
 
-DROP TABLE IF EXISTS `teachingworkgroup`;
 CREATE TABLE IF NOT EXISTS `teachingworkgroup` (
   `teachingWorkgroupID` int(11) NOT NULL AUTO_INCREMENT COMMENT 'รหัสกลุ่มงานสอน',
   `teachingWorkgroupType` int(11) NOT NULL COMMENT 'รหัสประเภทกลุ่มงานสอน',
@@ -177,7 +172,6 @@ INSERT INTO `teachingworkgroup` (`teachingWorkgroupID`, `teachingWorkgroupType`,
 -- Table structure for table `userrole`
 --
 
-DROP TABLE IF EXISTS `userrole`;
 CREATE TABLE IF NOT EXISTS `userrole` (
   `userRoleID` int(11) NOT NULL AUTO_INCREMENT COMMENT 'รหัสสิทธิ์',
   `userTypeID` int(11) NOT NULL COMMENT 'รหัสประเภทผู้ใช้',
@@ -203,7 +197,6 @@ INSERT INTO `userrole` (`userRoleID`, `userTypeID`, `userRole`, `status`) VALUES
 -- Table structure for table `users`
 --
 
-DROP TABLE IF EXISTS `users`;
 CREATE TABLE IF NOT EXISTS `users` (
   `userID` int(11) NOT NULL AUTO_INCREMENT COMMENT 'ลำดับ',
   `code` varchar(10) COLLATE utf8_unicode_ci NOT NULL COMMENT 'รหัสผู้ใช้',
@@ -251,7 +244,6 @@ INSERT INTO `users` (`userID`, `code`, `mentorID`, `IDCard`, `userTypeID`, `firs
 -- Table structure for table `usertype`
 --
 
-DROP TABLE IF EXISTS `usertype`;
 CREATE TABLE IF NOT EXISTS `usertype` (
   `userTypeID` int(5) NOT NULL AUTO_INCREMENT COMMENT 'รหัสประเภทผู้ใช้',
   `userType` varchar(50) COLLATE utf8_unicode_ci NOT NULL COMMENT 'ประเภทผู้ใช้',
@@ -274,7 +266,6 @@ INSERT INTO `usertype` (`userTypeID`, `userType`, `status`) VALUES
 -- Table structure for table `workload`
 --
 
-DROP TABLE IF EXISTS `workload`;
 CREATE TABLE IF NOT EXISTS `workload` (
   `workloadID` int(11) NOT NULL AUTO_INCREMENT COMMENT 'รหัสภาระงาน',
   `userID` int(11) NOT NULL,
