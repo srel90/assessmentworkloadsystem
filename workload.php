@@ -1408,6 +1408,15 @@ var script= new function() {
 			datastring.teachingWorkgroupProportion=$('#teachingWorkgroupProportion').val();
 			datastring.mode=$('#teachingWorkgroupmode').val();
 			datastring.teachingWorkgroupuid=$('#teachingWorkgroupuid').val();
+			
+			$('#teachingWorkgroupType').data("kendoDropDownList").select(0);
+			$('#teachingWorkgroup').val("");
+			$('#teachingWorkgroupCode').val("");
+			$('#teachingWorkgroupNumberOfStudents').val("");
+			$('#teachingWorkgroupSubject').val("");
+			$('#teachingWorkgroupHours').data("kendoNumericTextBox").value("");
+			$('#teachingWorkgroupProportion').val("");
+			
 			var response=ajax('workload.php',datastring,false);
 			$("#teachingworkgroup").data("kendoGrid").dataSource.read();
         	formteachingworkgroup.data("kendoWindow").center().close();
