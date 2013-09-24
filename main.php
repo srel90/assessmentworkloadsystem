@@ -92,7 +92,7 @@ endif;
 <!-- ENDS poshytip -->
 <!--Kendo UI-->
 <link href="css/kendo.common.min.css" rel="stylesheet" />
-<link href="css/kendo.black.min.css" rel="stylesheet" />
+<link href="css/kendo.default.min.css" rel="stylesheet" />
 <script src="js/kendo/kendo.all.min.js"></script>
 <!--ENDS Kendo UI-->
 <!--JQUERY FORM-->

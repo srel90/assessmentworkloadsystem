@@ -198,7 +198,7 @@ endif;
 <!-- ENDS poshytip -->
 <!--Kendo UI-->
 <link href="css/kendo.common.min.css" rel="stylesheet" />
-<link href="css/kendo.black.min.css" rel="stylesheet" />
+<link href="css/kendo.default.min.css" rel="stylesheet" />
 <script src="js/kendo/kendo.all.min.js"></script>
 <!--ENDS Kendo UI-->
 <!--JQUERY FORM-->
@@ -497,7 +497,7 @@ var script= new function() {
 				<form id="scriptForm" action="userprofile.php" method="post" name="scriptForm">
 					<input id="mode" name="mode" type="hidden" value="insert" />
 					<?php include_once('profileheader.php'); ?>
-					<fieldset class="k-content">
+					<fieldset >
 					<legend style="color: #37b2d1">จัดการข้อมูลผู้ใช้</legend>
 					<fieldset id="fprofileList">
 					<legend >รายการข้อมูลผู้ใช้</legend>

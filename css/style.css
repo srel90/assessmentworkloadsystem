@@ -28,7 +28,7 @@
 
 body {
 	line-height: 1;
-	color: #fff;
+	/*color: #fff;*/
 	background: #f1f1f1 url(../img/bg/patterns/noise.png);
 	font-family: Arial, Helvetica, sans-serif;
 	font-size:  100%;
@@ -64,10 +64,6 @@ body {
 	position: absolute;
 	top: 35px;
 	left: 30px;
-}
-
-#content a{
-	color: #ffff00;
 }
 
 #content p{
@@ -989,12 +985,12 @@ h6{ font-size: 20px; }
 	margin-left: 30px;
 }
 
-/* FORMS ------------------------------------------------------------*/
+ FORMS ------------------------------------------------------------
 .box{
 margin-top:20px;
 	padding: 10px;
 	border: 1px black solid;
-	background-color: #3d3d3d;
+	/*background-color: #3d3d3d;*/
 }
 .box-title {
 	text-align: center;
@@ -1014,7 +1010,7 @@ fieldset legend{
 label{
 	display:inline-block;
 	padding: 5px 10px;
-
+	/*color:black;*/
 	width:200px;
 }
 .input{

@@ -185,7 +185,7 @@ endif;
 <!-- ENDS poshytip -->
 <!--Kendo UI-->
 <link href="css/kendo.common.min.css" rel="stylesheet" />
-<link href="css/kendo.black.min.css" rel="stylesheet" />
+<link href="css/kendo.default.min.css" rel="stylesheet" />
 <script src="js/kendo/kendo.all.min.js"></script>
 <!--ENDS Kendo UI-->
 <!--JQUERY FORM-->
@@ -434,19 +434,19 @@ var script= new function() {
 				<form id="scriptForm" action="userprofile.php" method="post" name="scriptForm">
 					<input id="mode" name="mode" type="hidden" value="update" />
 					<?php include_once('profileheader.php'); ?>
-					<fieldset class="k-content">
+					<fieldset >
 					<legend style="color: #37b2d1">ปรับปรุงข้อมูลผู้ใช้</legend>
 					<fieldset>
 					<legend>ข้อมูลผู้ใช้</legend>
 					<div>
 						<div>
 							<label>ลำดับ :</label>
-							<input id="userID" class="input" name="userID" readonly required="required" title="คลิกเพิ่มข้อมูลเพื่อสร้างลำดับใหม่" type="text" value="<?php echo $personal[0]['userID'];?>">
+							<input id="userID" class="input" name="userID" readonly required title="คลิกเพิ่มข้อมูลเพื่อสร้างลำดับใหม่" type="text" value="<?php echo $personal[0]['userID'];?>">
 							<span class="k-invalid-msg" data-for="userID">
 							</span></div>
 						<div>
 							<label>รหัส :</label>
-							<input id="code" class="input" name="code" readonly required="required" title="คลิกเพิ่มข้อมูลเพื่อสร้างรหัสใหม่" type="text" value="<?php echo $personal[0]['code'];?>">
+							<input id="code" class="input" name="code" readonly required title="คลิกเพิ่มข้อมูลเพื่อสร้างรหัสใหม่" type="text" value="<?php echo $personal[0]['code'];?>">
 							<span class="k-invalid-msg" data-for="code"></span>
 						</div>
 						<div>
@@ -465,12 +465,12 @@ var script= new function() {
 							</span></div>
 						<div>
 							<label>ชื่อ :</label>
-							<input id="firstName" class="input" name="firstName" required="required" title="พิมพ์ชื่อ" type="text" value="<?php echo $personal[0]['firstName'];?>">*
+							<input id="firstName" class="input" name="firstName" required title="พิมพ์ชื่อ" type="text" value="<?php echo $personal[0]['firstName'];?>">*
 							<span class="k-invalid-msg" data-for="firstName">
 							</span></div>
 						<div>
 							<label>นามสกุล :</label>
-							<input id="lastName" class="input" name="lastName" required="required" title="พิมพ์นามสกุล" type="text" value="<?php echo $personal[0]['lastName'];?>">*
+							<input id="lastName" class="input" name="lastName" required title="พิมพ์นามสกุล" type="text" value="<?php echo $personal[0]['lastName'];?>">*
 							<span class="k-invalid-msg" data-for="lastName">
 							</span></div>
 						<div>
@@ -480,7 +480,7 @@ var script= new function() {
 							</span></div>
 						<div>
 							<label>วันเดือนปีเกิด :</label>
-							<input id="dateOfBirth" name="dateOfBirth" required="required" title="เลือกวันเดือนปีเกิด" value="<?php echo $personal[0]['dateOfBirth'];?>" />*
+							<input id="dateOfBirth" name="dateOfBirth" required title="เลือกวันเดือนปีเกิด" value="<?php echo $personal[0]['dateOfBirth'];?>" />*
 							<span class="k-invalid-msg" data-for="dateOfBirth">
 							</span></div>
 						<div>
@@ -502,13 +502,13 @@ var script= new function() {
 						</div>
 						<div>
 							<label>อีเมล์ :</label>
-							<input id="email" class="input" data-email-msg="รูปแบบอีเมล์ไม่ถูกต้อง" name="email" required="required" type="email" validationmessage="พิมพ์อีเมล์" value="<?php echo $personal[0]['email'];?>">*
+							<input id="email" class="input" data-email-msg="รูปแบบอีเมล์ไม่ถูกต้อง" name="email" required type="email" validationmessage="พิมพ์อีเมล์" value="<?php echo $personal[0]['email'];?>">*
 							<span class="k-invalid-msg" data-for="email"></span>
 						</div>
 						
 						<div>
 							<label>วันที่บรรจุ :</label>
-							<input id="registerDate" name="registerDate" required="required" title="เลือกวันที่บรรจุ" value="<?php echo $personal[0]['registerDate'];?>"/>*
+							<input id="registerDate" name="registerDate" required title="เลือกวันที่บรรจุ" value="<?php echo $personal[0]['registerDate'];?>"/>*
 							<span class="k-invalid-msg" data-for="registerDate">
 							</span>
 						</div>
@@ -604,12 +604,12 @@ var script= new function() {
 						<legend>ข้อมูลการเข้าใช้ระบบ</legend>
 						<div>
 							<label>ชื่อผู้ใช้ :</label>
-							<input id="username" class="input" name="username" required="required" type="text" title="พิมพ์ชื่อผู้ใช้" value="<?php echo $personal[0]['username'];?>">*
+							<input id="username" class="input" name="username" required type="text" title="พิมพ์ชื่อผู้ใช้" value="<?php echo $personal[0]['username'];?>">*
 							<span class="k-invalid-msg" data-for="username">
 							</span></div>
 						<div>
 							<label>รหัสผ่าน :</label>
-							<input id="password" class="input" name="password" required="required" title="พิมพ์รหัสผ่าน" type="password">*
+							<input id="password" class="input" name="password" required title="พิมพ์รหัสผ่าน" type="password">*
 							<span class="k-invalid-msg" data-for="password">
 							</span></div>
 						<div>

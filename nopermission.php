@@ -123,22 +123,21 @@ $(document).ready(function() {
 		<div id="content" style="color:black">
 			<div class="clear">
 			</div>
-			<h2 class="line-divider" style="margin-left: 30px;">You have no 
-			permission to access this page. Please contact administrator.</h2>
+			<h2 class="line-divider" style="margin-left: 30px;">คุณไม่มีสิทธิ์ในการเข้าใช้งานหน้านี้ กรุณาติดต่อ ผู้ดูแลระบบ</h2>
 			<!-- column (left)-->
 			<div class="one-column">
 				<!-- form -->
-				<h2 class="line-divider">Login</h2>
+				<h2 class="line-divider">เข้าสู่ระบบ</h2>
 				<form id="contactForm" name="contactForm" action="index.php" method="post">
 				<input id="txtmode" name="mode" type="hidden" value="checkLogin" />
 
 
 					<div>
-						<label>Username</label>
+						<label>ชื่อผู้ใช้</label>
 						<input id="username" class="form-poshytip" name="username" title="Enter your username" type="text" />
 					</div>
 					<div>
-						<label>Password</label>
+						<label>รหัสผ่าน</label>
 						<input id="password" class="form-poshytip" name="password" title="Enter your password" type="password" />
 					</div>
 					<input id="submit" name="submit" type="button" value="Login" />

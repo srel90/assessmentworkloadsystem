@@ -147,7 +147,7 @@ $(function() {
 	<!-- wrapper-main -->
 	<div class="wrapper">
 		<!-- content -->
-		<div id="content" style="color:black">
+		<div id="content">
 			<div class="clear">
 			</div>
 			<h2 class="line-divider" style="margin-left: 30px;"><br>ยินดีต้อนรับ<br></h2>
